@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Missing Persons</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a></a></h1>
+		<form id="form_1162837" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Wanted Persons</h2>
+			<p></p>
+		</div>						
+			<ul >
+			
+					<li class="section_break">
+			<h3>Personal Information</h3>
+			<p></p>
+		</li>		<li id="li_10" >
+		<label class="description" for="element_10">Name </label>
+		<span>
+			<input id="element_10_1" name= "element_10_1" class="element text" maxlength="255" size="8" value=""/>
+			<label>First</label>
+		</span>
+		<span>
+			<input id="element_10_2" name= "element_10_2" class="element text" maxlength="255" size="14" value=""/>
+			<label>Last</label>
+		</span> 
+		</li>		<li id="li_33" >
+		<label class="description" for="element_33">Age </label>
+		<div>
+			<input id="element_33" name="element_33" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_23" >
+		<label class="description" for="element_23">Sex </label>
+		<div>
+		<select class="element select medium" id="element_23" name="element_23"> 
+			<option value="" selected="selected"></option>
+<option value="1" >Male</option>
+<option value="2" >Female</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_34" >
+		<label class="description" for="element_34">Address </label>
+		
+		<div>
+			<input id="element_34_1" name="element_34_1" class="element text large" value="" type="text">
+			<label for="element_34_1">Street Address</label>
+		</div>
+	
+		<div>
+			<input id="element_34_2" name="element_34_2" class="element text large" value="" type="text">
+			<label for="element_34_2">Address Line 2</label>
+		</div>
+	
+		<div class="left">
+			<input id="element_34_3" name="element_34_3" class="element text medium" value="" type="text">
+			<label for="element_34_3">City</label>
+		</div>
+	
+		<div class="right">
+			<input id="element_34_4" name="element_34_4" class="element text medium" value="" type="text">
+			<label for="element_34_4">State / Province / Region</label>
+		</div>
+	
+		<div class="left">
+			<input id="element_34_5" name="element_34_5" class="element text medium" maxlength="15" value="" type="text">
+			<label for="element_34_5">Postal / Zip Code</label>
+		</div>
+	
+		<div class="right">
+			<select class="element select medium" id="element_34_6" name="element_34_6"> 
+			<option value="" selected="selected"></option>
+
+<option value="Grenada" >Grenada</option>
+<option value="Trinidad and Tobago" >Trinidad and Tobago</option>
+
+	
+			</select>
+		<label for="element_34_6">Country</label>
+	</div> 
+		</li>		<li id="li_35" >
+		<label class="description" for="element_35">Hair </label>
+		<div>
+			<input id="element_35" name="element_35" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_36" >
+		<label class="description" for="element_36">Height </label>
+		<div>
+			<input id="element_36" name="element_36" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_37" >
+		<label class="description" for="element_37">Complexion </label>
+		<div>
+			<input id="element_37" name="element_37" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_38" >
+		<label class="description" for="element_38">Built </label>
+		<div>
+			<input id="element_38" name="element_38" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li class="section_break">
+			<h3></h3>
+			<p></p>
+		</li>		<li id="li_40" >
+		<label class="description" for="element_40">Description </label>
+		<div>
+			<textarea id="element_40" name="element_40" class="element textarea medium"></textarea> 
+		</div> 
+                <li if="li_41">
+                <div>
+      <input type='file' onchange="readURL(this);" />
+    <img id="blah" src="#" alt="your image"style="float:right;"/>
+                   <script>
+      function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(250)
+                  
+                        .height(300);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+      </script> </div>
+		</li>		<li class="section_break">
+			<h3>Anyone having information or knowledge about the following person should contact any  of the following:
+C.R.D  440-3764 Monday - Friday 8:00am to 4:00pm
+C.I.D 440-3921
+P.H.G 440-3999 / 1043-46</h3>
+			<p></p>
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="1162837" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		<div id="footer">
+			
+		</div>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+    
+	</body>
+</html>
